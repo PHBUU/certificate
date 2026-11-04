@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ค้นหาใบรับรอง | คณะสาธารณสุขศาสตร์ มหาวิทยาลัยบูรพา</title>
+<meta property="og:title" content="ค้นหาใบรับรองการอบรม">
+<meta property="og:description" content="เลือกหลักสูตร กรอกชื่อ–นามสกุล แล้วดาวน์โหลดใบรับรองได้ทันที">
+<!-- แทนที่ลิงก์ด้านล่างทั้ง 3 จุดด้วยลิงก์เว็บแอป (Deploy > Manage deployments > Web app URL) -->
+<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyhBcBhDgW_5Jxn3xnrFhK52MJCOP9LC0h-pbGhkOTFIJxNuMT_idIvtwaXzfmdNmiA/exec">
+<script>location.replace('https://script.google.com/macros/s/AKfycbyhBcBhDgW_5Jxn3xnrFhK52MJCOP9LC0h-pbGhkOTFIJxNuMT_idIvtwaXzfmdNmiA/exec');</script>
+</head>
+<body>
+<a href="https://script.google.com/macros/s/AKfycbyhBcBhDgW_5Jxn3xnrFhK52MJCOP9LC0h-pbGhkOTFIJxNuMT_idIvtwaXzfmdNmiA/exec">ไปที่ระบบค้นหาใบรับรอง</a>
+</body>
+</html>
