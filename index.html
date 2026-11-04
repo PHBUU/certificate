@@ -6,11 +6,35 @@
 <title>ค้นหาใบรับรอง | คณะสาธารณสุขศาสตร์ มหาวิทยาลัยบูรพา</title>
 <meta property="og:title" content="ค้นหาใบรับรองการอบรม">
 <meta property="og:description" content="เลือกหลักสูตร กรอกชื่อ–นามสกุล แล้วดาวน์โหลดใบรับรองได้ทันที">
-<!-- แทนที่ลิงก์ด้านล่างทั้ง 3 จุดด้วยลิงก์เว็บแอป (Deploy > Manage deployments > Web app URL) -->
-<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyhBcBhDgW_5Jxn3xnrFhK52MJCOP9LC0h-pbGhkOTFIJxNuMT_idIvtwaXzfmdNmiA/exec">
-<script>location.replace('https://script.google.com/macros/s/AKfycbyhBcBhDgW_5Jxn3xnrFhK52MJCOP9LC0h-pbGhkOTFIJxNuMT_idIvtwaXzfmdNmiA/exec');</script>
+<meta name="theme-color" content="#f4927a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M11 21l-2 9 7-4 7 4-2-9' fill='%23c4553c'/%3E%3Ccircle cx='16' cy='13' r='10' fill='%23e07a5f'/%3E%3Cpath d='m11.5 13 3 3 6-6' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  html,body{margin:0;height:100%;background:#fff5f0}
+  @media (prefers-color-scheme:dark){html,body{background:#1b1311}}
+  .loading{position:fixed;inset:0;display:grid;place-items:center;text-align:center;
+    font:15px/1.7 'Sukhumvit Set','Leelawadee UI',system-ui,sans-serif;color:#87675e}
+  .loading a{color:#c4553c}
+  .spin{width:28px;height:28px;margin:0 auto 10px;border:3px solid #f4927a;border-right-color:transparent;border-radius:50%;animation:s .8s linear infinite}
+  @keyframes s{to{transform:rotate(360deg)}}
+  iframe{position:fixed;inset:0;width:100%;height:100%;border:0;background:transparent}
+</style>
 </head>
 <body>
-<a href="https://script.google.com/macros/s/AKfycbyhBcBhDgW_5Jxn3xnrFhK52MJCOP9LC0h-pbGhkOTFIJxNuMT_idIvtwaXzfmdNmiA/exec">ไปที่ระบบค้นหาใบรับรอง</a>
+<div class="loading" id="loading">
+  <div><div class="spin"></div>กำลังโหลด…<br><small>ถ้าหน้าไม่ขึ้น <a id="direct" href="#">กดที่นี่</a></small></div>
+</div>
+<iframe id="app" title="ระบบค้นหาใบรับรอง"></iframe>
+
+<script>
+  // ใส่ลิงก์เว็บแอปตรงนี้จุดเดียว (Apps Script > Deploy > Manage deployments > Web app URL)
+  var APP_URL = 'https://script.google.com/macros/s/AKfycbz8p6RsG4tnb3vRLpKWzE_Beh0F0u1b3TCLLRtKyZYlYs-nMHKgEdLdTzZ9naSQqz1Z/exec';
+
+  var frame = document.getElementById('app');
+  frame.src = APP_URL;
+  document.getElementById('direct').href = APP_URL;
+  frame.addEventListener('load', function () {
+    setTimeout(function () { document.getElementById('loading').hidden = true; }, 2000);
+  });
+</script>
 </body>
 </html>
